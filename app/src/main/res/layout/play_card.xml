@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginTop="10dp">
+    <RelativeLayout
+        android:id="@+id/border_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_card1"
+        android:padding="1dp"
+        android:clipToOutline="true">
+
+        <RelativeLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient1"
+            android:clipToOutline="true"
+            android:paddingStart="150dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/play_games_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAY GAMES"
+                    android:textSize="32sp"
+                    android:textColor="#02275F"
+                    android:fontFamily="@font/extrabold"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/earn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&amp; EARN"
+                    android:textSize="32sp"
+                    android:textColor="#02275F"
+                    android:fontFamily="@font/extrabold"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/upto_200_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPTO $200 >"
+                    android:textSize="25sp"
+                    android:textColor="#635DFF"
+                    android:fontFamily="@font/extrabold"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/play_games_icon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/play_games"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"/>
+
+</RelativeLayout>
