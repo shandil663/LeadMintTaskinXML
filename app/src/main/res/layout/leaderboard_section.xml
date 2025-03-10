@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingHorizontal="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/lock_card_border"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/lock_card_bg"
+            android:paddingStart="100dp"
+            android:paddingEnd="10dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LeaderBoard >"
+                    android:textSize="27sp"
+                    android:textColor="#3581F6"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top the leaderboard &amp; Earn More!"
+                    android:textSize="13.5sp"
+                    android:textColor="#82B1F9"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/badge"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"/>
+</RelativeLayout>

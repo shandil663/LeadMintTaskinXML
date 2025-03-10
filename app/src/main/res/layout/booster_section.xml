@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingStart="20dp"
+    android:layout_marginTop="15dp"
+    android:paddingEnd="20dp">
+
+    <RelativeLayout
+        android:id="@+id/border_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boost_border"
+        android:padding="1dp"
+        android:clipToOutline="true">
+
+        <RelativeLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boost_background"
+            android:clipToOutline="true"
+            android:paddingEnd="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/reward_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2X Rewards for 1hr"
+                    android:textSize="18sp"
+                    android:textColor="#65B504"
+                    android:fontFamily="@font/extrabold"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activate_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activate_button"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:text="Activate 2X"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/extrabold"
+            android:textStyle="bold"
+            android:backgroundTint="#65B504"
+            android:stateListAnimator="@null"
+            android:background="@drawable/boost_button_bg"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:id="@+id/badge_background"
-        android:layout_width="120dp"
+        android:layout_width="130dp"
         android:layout_height="38dp"
         android:background="@drawable/badge_bg"
         android:paddingStart="55dp"
