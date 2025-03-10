@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/referEarnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"
+            android:contentDescription="Back Arrow"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer &amp; Earn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/extrabold"
+            android:textColor="#3581F6"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/refer_and_earn"
+        layout="@layout/referandearn"
+        />
+
+    <include
+        android:id="@+id/bottom_refer"
+        layout="@layout/bottom_refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refer_and_earn"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

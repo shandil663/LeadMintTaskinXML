@@ -1,45 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
         android:background="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottom_nav_container">
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_container"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:orientation="vertical">
-            <include layout="@layout/headersection"/>
-            <include layout="@layout/play_earn"/>
-            <include layout="@layout/play_card"/>
-            <include layout="@layout/booster_section"/>
-            <include layout="@layout/lock_card"/>
-            <include layout="@layout/cards_section"/>
-            <include layout="@layout/leaderboard_section"/>
+
+            <include layout="@layout/headersection" />
+
+            <LinearLayout
+                android:id="@+id/earn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/play_earn" />
+            </LinearLayout>
+
+            <include layout="@layout/play_card" />
+
+            <LinearLayout
+                android:id="@+id/booster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/booster_section" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/lock_card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/cards_section" />
+            </LinearLayout>
+
+            <include layout="@layout/leaderboard_section" />
 
 
         </LinearLayout>
     </ScrollView>
+
     <FrameLayout
         android:id="@+id/bottom_nav_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent">
-        <include layout="@layout/bottom_nav"/>
+
+        <include layout="@layout/bottom_nav" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:paddingStart="20dp"
@@ -11,43 +10,43 @@
         android:layout_height="110dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/border_gradient"
-        android:padding="1dp"
-        android:clipToOutline="true">
+        android:clipToOutline="true"
+        android:padding="1dp">
 
         <RelativeLayout
             android:id="@+id/card_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/background_gardient"
+            android:clipToOutline="true"
             android:paddingStart="150dp"
-            android:paddingEnd="10dp"
-            android:clipToOutline="true">
+            android:paddingEnd="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_centerVertical="true">
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/play_earn_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Play &amp; Earn"
-                    android:textSize="32sp"
-                    android:textColor="#02275F"
                     android:fontFamily="@font/extrabold"
-                    android:textStyle="bold"/>
+                    android:text="Play &amp; Earn"
+                    android:textColor="#02275F"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/upto_200_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="UPTO $200 >"
-                    android:textSize="25sp"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="@font/extrabold"
-                    android:textStyle="bold"/>
+                    android:text="UPTO $200 >"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
@@ -56,20 +55,27 @@
         android:id="@+id/vr_guy"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/vr_guy"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-10dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/vr_guy" />
 
     <RelativeLayout
         android:id="@+id/boost_timer_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="10dp">
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp">
 
-        <include layout="@layout/boost_timer_badge"/>
+        <LinearLayout
+            android:id="@+id/actual_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/boost_timer_badge" />
+        </LinearLayout>
+
     </RelativeLayout>
 </RelativeLayout>

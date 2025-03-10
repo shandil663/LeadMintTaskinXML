@@ -1,0 +1,119 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:paddingStart="20dp"
+    android:layout_marginTop="80dp"
+    android:paddingEnd="20dp">
+
+    <RelativeLayout
+        android:id="@+id/border_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_background"
+        android:padding="1dp"
+        android:clipToOutline="true">
+
+        <RelativeLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_refer_card"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:clipToOutline="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/refer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refer a Friend"
+                    android:textSize="15sp"
+                    android:textColor="#82B1F9"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get "
+                        android:textSize="20sp"
+                        android:textColor="#3581F6"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/extrabold"/>
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/bolt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 2000 Coins"
+                        android:textSize="20sp"
+                        android:textColor="#3581F6"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/extrabold"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="18sp"
+                    android:textColor="#3581F6"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get 20% of your Friends\nPlaytime Earnings for\nlifetime!"
+                    android:textSize="18sp"
+                    android:textColor="#3581F6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/extrabold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/vr_guy"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/refer_earn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-25dp"/>
+</RelativeLayout>
